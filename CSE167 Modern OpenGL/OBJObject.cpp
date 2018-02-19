@@ -129,7 +129,7 @@ void OBJObject::rotate(float deg, glm::vec3 vec)
 void OBJObject::translate(glm::vec3 vec)
 {
     this->position = this->last_position + vec;
-    this->tmx = glm::translate(glm::mat4(1.0f), this->position); // * this->tmx;
+    this->tmx = glm::translate(glm::mat4(1.0f), this->position);
     this->last_position = this->position;
 }
 
